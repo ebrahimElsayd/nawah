@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nawah/features/chat_screen/presentation/screens/home_page.dart';
 import 'package:nawah/features/courseScreenEnrollment/presentation/screens/course_screen_enrollment.dart';
 import 'package:nawah/features/dashboard/presentation/screens/dashboard_screen.dart';
 import 'package:nawah/features/notificationScreen/presentation/screens/notification_screen.dart';
@@ -30,6 +31,7 @@ class _HomeState extends State<Home> {
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.school), label: "Courses"),
+          BottomNavigationBarItem(icon: Icon(Icons.chat), label: "Chat"),
           BottomNavigationBarItem(
               icon: Icon(Icons.notifications), label: "Notifications"),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
@@ -41,6 +43,7 @@ class _HomeState extends State<Home> {
   List<Widget> tabs = [
     DashboardScreen(),
     CourseScreenEnrollment(),
+    HomePage(),
     NotificationScreen(),
     ProfileScreenClass()
   ];
